@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s some formating changes i supposedexplore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington).
     #HINT: Use a while loop to handle invalid inputs
     while True:
@@ -82,7 +82,7 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
-        #Filter by month to create the new dataframe
+        #Filter by month to create the new dataframe maybe some commenting changes
         df = df[df['month'] == month]
     #print(df)   #51k rows april
 
@@ -135,7 +135,7 @@ def station_stats(df):
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
 
-    print(f"The most common start station: {common_start_station}")
+    print(f"The most common something else to modify to make it look nice start station: {common_start_station}")
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
